@@ -105,7 +105,7 @@
                 Yes. If you are familiar with <code>curl</code> you can use that to directly upload and download content.
             </p>
             <p style="margin-bottom: 0;"><strong>Upload a file</strong></p>
-            <pre><code>$ curl -L --progress --upload-file test.txt {{.Config.PublicURL}}
+            <pre><code>$ curl -L --progress-bar --upload-file test.txt {{.Config.PublicURL}}
 {{.Config.PublicURL}}/patient-gecko/test.txt</code></pre>
             <p>Or, use this <code>.bashrc</code>/<code>.zshrc</code> shortcut:</p>
             <pre><code>alias share='f() { curl --progress-bar --upload-file "$1" https://share.schollz.com | tee /dev/null; echo };f'</code></pre>
